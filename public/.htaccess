@@ -1,0 +1,4 @@
+RewriteEngine on
+RedirectMatch 403 /\.svn.*$
+RewriteCond %{HTTP_HOST} ^www\.deargodpleasemakeitstop\.com$
+RewriteRule ^(.*) http://deargodpleasemakeitstop.com/$1 [R=301,L]
